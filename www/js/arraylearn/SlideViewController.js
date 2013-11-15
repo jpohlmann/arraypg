@@ -135,6 +135,10 @@ SlideViewController = function() {
             type: "GET",
             url: 'http://'+SlideViewController.socket_host+'/arraylearn/slide-view/view',
             dataType: "json",
+			headers: {
+				"Array-Registration-Id": "1301",
+				"Array-Activity-Id": "18"
+			},
             async: false
         })
         .complete(function(resp) {
@@ -368,7 +372,7 @@ SlideViewController = function() {
      * @return object
      */
     this.getImage = function(src) {
-        var image = $('<img/>', {'src': src} );
+        var image = $('<img/>', {'src': 'http://'+this.socket_host+src} );
         image.attr('id', 'theSlide');
         image.attr('alt', 'slide');
         image.load();
