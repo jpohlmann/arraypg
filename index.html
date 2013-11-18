@@ -9,33 +9,33 @@
         <meta charset="utf-8">
         <title>Array Framework Application</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">        
-		<script type="text/css" src="/css/720_grid.css"></script>
-		<script type="text/javascript" src="/js/html5.js"></script>
-        <link href="/css/base.css" media="screen" rel="stylesheet" type="text/css">
-		<link href="/css/720_grid.css" media="screen and (min-width: 720px)" rel="stylesheet" type="text/css">
-		<link href="/css/986_grid.css" media="screen and (min-width: 986px)" rel="stylesheet" type="text/css">
-		<link href="/css/1236_grid.css" media="screen and (min-width: 1236px)" rel="stylesheet" type="text/css">		
-		<link rel="stylesheet" href="/css/jquery.mobile-1.3.1.min.css" />
+		<script type="text/css" src="css/720_grid.css"></script>
+		<script type="text/javascript" src="js/html5.js"></script>
+        <link href="css/base.css" media="screen" rel="stylesheet" type="text/css">
+		<link href="css/720_grid.css" media="screen and (min-width: 720px)" rel="stylesheet" type="text/css">
+		<link href="css/986_grid.css" media="screen and (min-width: 986px)" rel="stylesheet" type="text/css">
+		<link href="css/1236_grid.css" media="screen and (min-width: 1236px)" rel="stylesheet" type="text/css">		
+		<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" />
 
-		<link href="/css/bootstrap.min.css" rel="stylesheet">
-		<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 
-		<link href="/css/style.css" rel="stylesheet" id="styleCss">
-		<link href="/css/mobile.css" rel="stylesheet" id="mobileCss">
+		<link href="css/style.css" rel="stylesheet" id="styleCss">
+		<link href="css/mobile.css" rel="stylesheet" id="mobileCss">
 
-		<script src="/js/jquery.min.js"></script>
+		<script src="js/jquery.min.js"></script>
 		<!-- Prevent jqm from adding classes to specific form elements. -->
 		<script>
 			$(document).bind('mobileinit',function(){
 				$.mobile.page.prototype.options.keepNative = "#keepNative select, #keepNative input, #keepNative textarea";
 			});
 		</script>
-		<script src="/js/jquery.mobile-1.3.1.min.js"></script>
-		<script src="/js/bootstrap.min.js"></script>
-		<script src="/js/jquery_speed.js"></script>
+		<script src="js/jquery.mobile-1.3.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery_speed.js"></script>
     </head>
     <body>
-<script src="/js/arraylearn/SlideViewController.js"></script>
+<script src="js/arraylearn/SlideViewController.js"></script>
 <script type="text/javascript">
 var socket_port = 0;
 var socket_host = '';
@@ -57,20 +57,20 @@ SlideViewController.socket_host = socket_host;
 SlideViewController.render();
 </script>
 <script src="/js/jquery.cookie.js"></script>
-<link rel="stylesheet" type="text/css" href="/css/jchartfx.css">
-<link rel="stylesheet" type="text/css" href="/css/slide-view.css">
+<link rel="stylesheet" type="text/css" href="css/jchartfx.css">
+<link rel="stylesheet" type="text/css" href="css/slide-view.css">
 <link rel="stylesheet" type="text/css" href="http://arraylearn.com/arraylearn/slide-view/css">
 
-<script type="text/javascript" src="/js/jchartfx/jchartfx.system.js"></script>
-<script type="text/javascript" src="/js/handlebars-v1.1.2.js"></script>
-<script type="text/javascript" src="/js/jchartfx/jchartfx.coreVector.js"></script>
-<script type="text/javascript" src="/js/jchartfx/jchartfx.handdrawn.js"></script>
-<script type="text/javascript" src="/js/jchartfx/jchartfx.coreVector3d.js"></script>
-<script type="text/javascript" src="/js/jchartfx/jchartfx.animation.js"></script>
-<script type="text/javascript" src="/js/arraylearn/FacultyQuestionController.js"></script>
-<script type="text/javascript" src="/js/arraylearn/SlideNotesController.js"></script>
-<script type="text/javascript" src="/js/arraylearn/SurveyDesignView.js"></script>
-<script type="text/javascript" src="/js/arraylearn/ChartingController.js"></script>
+<script type="text/javascript" src="js/jchartfx/jchartfx.system.js"></script>
+<script type="text/javascript" src="js/handlebars-v1.1.2.js"></script>
+<script type="text/javascript" src="js/jchartfx/jchartfx.coreVector.js"></script>
+<script type="text/javascript" src="js/jchartfx/jchartfx.handdrawn.js"></script>
+<script type="text/javascript" src="js/jchartfx/jchartfx.coreVector3d.js"></script>
+<script type="text/javascript" src="js/jchartfx/jchartfx.animation.js"></script>
+<script type="text/javascript" src="js/arraylearn/FacultyQuestionController.js"></script>
+<script type="text/javascript" src="js/arraylearn/SlideNotesController.js"></script>
+<script type="text/javascript" src="js/arraylearn/SurveyDesignView.js"></script>
+<script type="text/javascript" src="js/arraylearn/ChartingController.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
     SlideViewController.slidePull();
@@ -93,7 +93,7 @@ $(document).ready(function() {
     });
 });
 </script>
-<script type="text/javascript" src="/js/arraylearn/SlideView.js"></script>
+<script type="text/javascript" src="js/arraylearn/SlideView.js"></script>
 <script id="ratings-template" type="text/x-handlebars-template">
     <div class="pull-right">
         <div class="pull-left largertopmargin">
@@ -123,7 +123,7 @@ $(document).ready(function() {
             <a href="{{this.url}}" class="btn btn-block btn-large iframe-button" target="iframeContent">
             <i class="array-icon {{this.logoPath}}"  style="margin-right:5px;"></i>
             <span class="hide-btn-name">{{this.name}} </span>
-            <img src="/img/icons/new-banner.png" class="new-btn-banner" style="display:none;">
+            <img src="img/icons/new-banner.png" class="new-btn-banner" style="display:none;">
             </a>
         {{/each}}
     </div><!--/button-container-->
@@ -349,7 +349,7 @@ $(document).ready(function() {
 	</div><!--/grid-->
 </div><!--/page-->
 <div id="notequestiondiv"></div>
-<script src="/js/jquery-ui.min.js"></script>
-<script src="/js/jquery-ui-touch-punch.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery-ui-touch-punch.js"></script>
 </body>
 </html>
