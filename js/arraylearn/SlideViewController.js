@@ -136,8 +136,8 @@ SlideViewController = function() {
             url: 'http://'+SlideViewController.socket_host+'/arraylearn/slide-view/view',
             dataType: "json",
 			headers: {
-				"Array-Registration-Id": "1298",
-				"Array-Activity-Id": "18"
+				"Array-Registration-Id": "1",
+				"Array-Activity-Id": "1"
 			},
             async: false
         })
