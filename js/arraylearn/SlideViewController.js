@@ -136,8 +136,8 @@ SlideViewController = function() {
             url: 'http://'+SlideViewController.socket_host+'/arraylearn/slide-view/view',
             dataType: "json",
 			headers: {
-				"Array-Registration-Id": "1",
-				"Array-Activity-Id": "1"
+				"Array-Registration-Id": "1298",
+				"Array-Activity-Id": "18"
 			},
             async: false
         })
@@ -221,7 +221,7 @@ SlideViewController = function() {
     {
         var config = {};
         config.buttons = this.buttons;
-        config.logo = '/img/logo.png';
+        config.logo = 'img/logo.png';
         config.logotext = 'Array Learning';
         config.allow_faculty_question = this.allow_faculty_question;
         config.allow_slide_notes = this.allow_slide_notes;

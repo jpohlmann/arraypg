@@ -1,29 +1,29 @@
-@import url(fontface.css);
-@import url(font-awesome.css);
-@import url(icomoon.css);
-@import url(base.css);
-@import url(header.css);
-@import url(main-content.css);
-@import url(sidebar.css);
-@import url(progress-bars.css);
-@import url(breadcrumb.css);
-@import url(pagination.css);
-@import url(alert-messages.css);
-@import url(gradients.css);
-@import url(buttons.css);
-@import url(dropdowns.css);
-@import url(tabs.css);
-@import url(form.css);
-@import url(widgets.css);
+@import url(css/themes/fontface.css);
+@import url(css/themes/font-awesome.css);
+@import url(css/themes/icomoon.css);
+@import url(css/themes/base.css);
+@import url(css/themes/header.css);
+@import url(css/themes/main-content.css);
+@import url(css/themes/sidebar.css);
+@import url(css/themes/progress-bars.css);
+@import url(css/themes/breadcrumb.css);
+@import url(css/themes/pagination.css);
+@import url(css/themes/alert-messages.css);
+@import url(css/themes/gradients.css);
+@import url(css/themes/buttons.css);
+@import url(css/themes/dropdowns.css);
+@import url(css/themes/tabs.css);
+@import url(css/themes/form.css);
+@import url(css/themes/widgets.css);
 
 /* plugins */
-@import url(jqplot.css);
-@import url(slider.css);
-@import url(redactor.css);
-@import url(google-maps.css);
-@import url(datepicker.css);
-@import url(timepicker.css);
+@import url(css/themes/jqplot.css);
+@import url(css/themes/slider.css);
+@import url(css/themes/redactor.css);
+@import url(css/themes/google-maps.css);
+@import url(css/themes/datepicker.css);
+@import url(css/themes/timepicker.css);
 /* ./plugins */
 
-@import url(addon-styles.css);
-@import url(kuta-responsive.css);
+@import url(css/themes/addon-styles.css);
+@import url(css/themes/kuta-responsive.css);
