@@ -635,6 +635,10 @@ SlideViewController = function() {
                 return;
             $.ajax({
                 url:'http://'+SlideViewController.socket_host+"/arraylearn/dashboard/rating",
+				headers: {
+					"Array-Registration-Id": "1",
+					"Array-Activity-Id": "1"
+				},
                 cache:0,
                 data:poststr,
                 success:function(result){

@@ -33,10 +33,15 @@ FacultyQuestionController = function() {
 			$('span.help-block').show();
 			return false;
 		}
-		var url = "/arraylearn/dashboard/facultyquestion?activity_id="+FacultyQuestionController.activity_id+"&registration_id="+FacultyQuestionController.registration_id+"&current_slide="+SlideViewController.current_slide_id+"&";
+		var url = "http://"+SlideViewController.socket_host+"/arraylearn/dashboard/facultyquestion?activity_id="+FacultyQuestionController.activity_id+"&registration_id="+FacultyQuestionController.registration_id+"&current_slide="+SlideViewController.current_slide_id+"&";
 		url += $("#faculty_question").serialize();
 		$.ajax({
 			type: "GET",
+			headers: {
+				"Array-Registration-Id": "1",
+				"Array-Activity-Id": "1"
+			},
+			crossDomain: true,
 			url: url
 		})
 		.done(function(html) {

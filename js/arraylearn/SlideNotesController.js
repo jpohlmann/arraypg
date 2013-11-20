@@ -60,6 +60,11 @@ SlideNotesController = function() {
 		$("#error_message_note").hide();
 		$.ajax({
 			type: "POST",
+			crossDomain: true,
+			headers: {
+				"Array-Registration-Id": "1",
+				"Array-Activity-Id": "1"
+			},
 			data: $("#slide_note").serialize(),
 			url: 'http://'+SlideViewController.socket_host+'/arraylearn/dashboard/slidenote'
 		})
