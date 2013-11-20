@@ -347,6 +347,22 @@
     padding:    2px;
     width:      32px;
 }
+.star_1{
+	background: url('star_blank.png') no-repeat;
+}
+.star_2{
+	background: url('images/star_blank.png') no-repeat;
+}
+.star_3{
+	background: url('/images/star_blank.png') no-repeat;
+}
+.star_4{
+	background: url('../images/star_blank.png') no-repeat;
+}
+.star_5{
+	background: url('../../images/star_blank.png') no-repeat;
+}
+
 .ratings_vote {
     background: url('images/star_voted.png') no-repeat;
 }
