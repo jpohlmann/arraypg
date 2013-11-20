@@ -365,6 +365,7 @@
 }
 .star_4{
 	background: url('../images/star_blank.png') no-repeat;
+	border: thin solid #000;
 }
 .star_5{
 	background: url('../../images/star_blank.png') no-repeat;
