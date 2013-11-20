@@ -354,22 +354,6 @@
 .ratings_over {
     background: url('images/star_overs.png') no-repeat;
 }
-.star_1{
-	background: url('star_blank.png') no-repeat;
-}
-.star_2{
-	background: url('images/star_blank.png') no-repeat;
-}
-.star_3{
-	background: url('/images/star_blank.png') no-repeat;
-}
-.star_4{
-	background: url('../images/star_blank.png') no-repeat;
-	border: thin solid #000;
-}
-.star_5{
-	background: url('../../images/star_blank.png') no-repeat;
-}
 .total_votes {  
     top: 40px;  
     left: 0;  
