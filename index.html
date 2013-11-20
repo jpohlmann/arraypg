@@ -102,8 +102,9 @@ $(document).ready(function() {
         </div>
         <div id="rating_1" class="ratings pull-right">
             {{#each rating}}
+			{{@key}}
                 {{#if this.star}}
-                    <div class="star_{{@key}} ratings_stars ratings_blank ratings_vote" id="{{@key}}"></div>
+                    <div class="star_{{@key}} ratings_stars ratings_blank ratings_vote" id="{{@key}}">{{@key}}</div>
                 {{else}}
                     <div class="star_{{@key}} ratings_stars ratings_blank" id="{{@key}}"></div>
                 {{/if}}
