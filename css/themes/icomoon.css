@@ -347,6 +347,13 @@
     padding:    2px;
     width:      32px;
 }
+
+.ratings_vote {
+    background: url('images/star_voted.png') no-repeat;
+}
+.ratings_over {
+    background: url('images/star_overs.png') no-repeat;
+}
 .star_1{
 	background: url('star_blank.png') no-repeat;
 }
@@ -362,14 +369,6 @@
 .star_5{
 	background: url('../../images/star_blank.png') no-repeat;
 }
-
-.ratings_vote {
-    background: url('images/star_voted.png') no-repeat;
-}
-.ratings_over {
-    background: url('images/star_overs.png') no-repeat;
-}
-		
 .total_votes {  
     top: 40px;  
     left: 0;  
