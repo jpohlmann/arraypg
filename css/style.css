@@ -31,6 +31,19 @@
 
 @import url(css/themes/addon-styles.css);
 @import url(css/themes/kuta-responsive.css);
+.ratings {
+    overflow:   visible;
+    padding:    10px;
+    position:   relative;
+    height:     40px;
+}
+.ratings_stars {
+    background: url('images/star_blank.png') no-repeat;
+    float:      left;
+    height:     28px;
+    padding:    2px;
+    width:      32px;
+}
 
 .star_1{
 	background: url('star_blank.png') no-repeat;
