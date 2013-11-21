@@ -32,6 +32,21 @@
 @import url(css/themes/addon-styles.css);
 @import url(css/themes/kuta-responsive.css);
 
+.star_1{
+	background: url('star_blank.png') no-repeat;
+}
+.star_2{
+	background: url('images/star_blank.png') no-repeat;
+}
+.star_3{
+	background: url('/images/star_blank.png') no-repeat;
+}
+.star_4{
+	background: url('../images/star_blank.png') no-repeat;
+}
+.star_5{
+	background: url('../../images/star_blank.png') no-repeat;
+}
 
 body {
     padding-top: 60px;
