@@ -1,36 +1,36 @@
 /* Import styles for theme */
-@import url(themes/fontface.css);
-@import url(themes/font-awesome.css);
-@import url(themes/icomoon.css);
-@import url(themes/base.css);
-@import url(themes/header.css);
-@import url(themes/main-content.css);
-@import url(themes/sidebar.css);
-@import url(themes/progress-bars.css);
-@import url(themes/breadcrumb.css);
-@import url(themes/pagination.css);
-@import url(themes/alert-messages.css);
-@import url(themes/gradients.css);
-@import url(themes/buttons.css);
-@import url(themes/dropdowns.css);
-@import url(themes/tabs.css);
-@import url(themes/form.css);
-@import url(themes/widgets.css);
+@import url(css/themes/fontface.css);
+@import url(css/themes/font-awesome.css);
+@import url(css/themes/icomoon.css);
+@import url(css/themes/base.css);
+@import url(css/themes/header.css);
+@import url(css/themes/main-content.css);
+@import url(css/themes/sidebar.css);
+@import url(css/themes/progress-bars.css);
+@import url(css/themes/breadcrumb.css);
+@import url(css/themes/pagination.css);
+@import url(css/themes/alert-messages.css);
+@import url(css/themes/gradients.css);
+@import url(css/themes/buttons.css);
+@import url(css/themes/dropdowns.css);
+@import url(css/themes/tabs.css);
+@import url(css/themes/form.css);
+@import url(css/themes/widgets.css);
 
 /* plugins */
-@import url(themes/jqplot.css);
-@import url(themes/slider.css);
-@import url(themes/redactor.css);
-/* @import url(/themes/google-maps.css); */
-@import url(themes/datepicker.css);
-@import url(themes/timepicker.css);
-@import url(themes/colorpicker.css);
-@import url(themes/tablesorter.css);
+@import url(css/themes/jqplot.css);
+@import url(css/themes/slider.css);
+@import url(css/themes/redactor.css);
+/* @import url(/css/themes/google-maps.css); */
+@import url(css/themes/datepicker.css);
+@import url(css/themes/timepicker.css);
+@import url(css/themes/colorpicker.css);
+@import url(css/themes/tablesorter.css);
 
 /* ./plugins */
 
-@import url(themes/addon-styles.css);
-@import url(themes/kuta-responsive.css);
+@import url(css/themes/addon-styles.css);
+@import url(css/themes/kuta-responsive.css);
 
 
 body {
