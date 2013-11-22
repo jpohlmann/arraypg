@@ -194,9 +194,9 @@ $(function() {
         $('#changeMarginQ').removeClass('marginleft3percent');
     });
     $('#stylus-link').click(function() {
-        window.location = 'http://'+SlideViewController.socket_host+'/arraylearn/slide-view/note?slide_id=' + SlideViewController.current_slide_id;
+        window.location = 'http://'+SlideViewController.socket_host+'/note.html?slide_id=' + SlideViewController.current_slide_id;
     });
     $("#slideNoteButtonStylus").click(function() {
-        window.location = 'http://'+SlideViewController.socket_host+'/arraylearn/slide-view/note?slide_id=' + SlideViewController.current_slide_id;
+        window.location = 'http://'+SlideViewController.socket_host+'/note.html?slide_id=' + SlideViewController.current_slide_id;
     });
 });
