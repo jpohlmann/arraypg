@@ -36,19 +36,19 @@
     </head>
     <body>
 <!-- jQuery UI -->
-<script type="text/javascript" src="/js/wPaint/inc/jquery.ui.core.min.js"></script>
-<script type="text/javascript" src="/js/wPaint/inc/jquery.ui.widget.min.js"></script>
-<script type="text/javascript" src="/js/wPaint/inc/jquery.ui.mouse.min.js"></script>
-<script type="text/javascript" src="/js/wPaint/inc/jquery.ui.draggable.min.js"></script>
+<script type="text/javascript" src="js/wPaint/inc/jquery.ui.core.min.js"></script>
+<script type="text/javascript" src="js/wPaint/inc/jquery.ui.widget.min.js"></script>
+<script type="text/javascript" src="js/wPaint/inc/jquery.ui.mouse.min.js"></script>
+<script type="text/javascript" src="js/wPaint/inc/jquery.ui.draggable.min.js"></script>
 <!-- wColorPicker -->
-<link rel="Stylesheet" type="text/css" href="/js/wPaint/inc/wColorPicker.css" />
-<script type="text/javascript" src="/js/wPaint/inc/wColorPicker.js"></script>
+<link rel="Stylesheet" type="text/css" href="js/wPaint/inc/wColorPicker.css" />
+<script type="text/javascript" src="js/wPaint/inc/wColorPicker.js"></script>
 
 <!-- wPaint -->
-<link rel="Stylesheet" type="text/css" href="/js/wPaint/wPaint.css" />
+<link rel="Stylesheet" type="text/css" href="js/wPaint/wPaint.css" />
 <style type="text/css">
 </style>
-<script type="text/javascript" src="/js/wPaint/wPaint.js"></script>
+<script type="text/javascript" src="js/wPaint/wPaint.js"></script>
 <script type="text/javascript" src="js/jquery.cookie.js"></script>
 <script type="text/javascript" src="js/handlebars-v1.1.2.js"></script>
 <script type="text/javascript">
@@ -103,7 +103,7 @@ $.ajax({
     }
 });
 $.ajax({
-	url:"http://arraylearn.com/arraylearn/slide-view/get-stylus-css?slide_url="+slide_url,
+	url:'http://'+socket_host+'/arraylearn/slide-view/get-stylus-css?slide_url='+slide_url,
     dataType: "json",
     async: false,
 	headers: {
