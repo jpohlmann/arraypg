@@ -196,11 +196,6 @@ $(document).ready(function() {
     	    window.location = 'index.html';
     	}, 3000);
 	});
-    $("#save_note").ajaxComplete( function() {
-    	setTimeout(function(){
-    	    window.location('index.html');
-    	}, 3000);
-  });
     $('#cancelButton').on('click', function(){
         window.location='index.html';
     });
@@ -208,7 +203,6 @@ $(document).ready(function() {
         window.location='index.html#slideNote';
     });
 	var wp = $("#wPaint").wPaint({
-		//image: slide,
 		fillStyle: '#E01B1B',
 		strokeStyle: '#E01B1B',
 		imageBg: 'data:image/png;base64,'+slide,
