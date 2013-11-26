@@ -42,7 +42,7 @@
 var socket_port = 0;
 var socket_host = '';
 if ($.cookie("registration_id") == null) {
-	//window.location = 'login.html';
+	window.location.href = 'login.html';
 }
 $.ajax({
     url: "http://arraylearn.com/arraylearn/dashboard/get-socket-settings",

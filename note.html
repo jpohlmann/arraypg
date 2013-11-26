@@ -54,7 +54,7 @@
 <script type="text/javascript" src="js/handlebars-v1.1.2.js"></script>
 <script type="text/javascript">
 if ($.cookie("registration_id") == null) {
-	window.location = 'login.html';
+	window.location.href = 'login.html';
 }
 (function($) {
     $.QueryString = (function(a) {
@@ -197,14 +197,14 @@ $(document).ready(function() {
             $('#noteSuccessModal').modal('hide');
 			$('.control-group').removeClass('error');
 			$('span.help-block').hide();
-    	    window.location = 'index.html';
+    	    window.location.href = 'index.html';
     	}, 3000);
 	});
     $('#cancelButton').on('click', function(){
-        window.location='index.html';
+        window.location.href='index.html';
     });
     $('#slideNote').on('click', function(){
-        window.location='index.html#slideNote';
+        window.location.href='index.html#slideNote';
     });
 	var wp = $("#wPaint").wPaint({
 		fillStyle: '#E01B1B',
