@@ -38,8 +38,8 @@ FacultyQuestionController = function() {
 		$.ajax({
 			type: "GET",
 			headers: {
-				"Array-Registration-Id": "1",
-				"Array-Activity-Id": "1"
+				"Array-Registration-Id": SlideViewController.user_id,
+				"Array-Activity-Id": SlideViewController.activity_id
 			},
 			crossDomain: true,
 			url: url

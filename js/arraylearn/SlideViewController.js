@@ -136,8 +136,8 @@ SlideViewController = function() {
             url: 'http://'+SlideViewController.socket_host+'/arraylearn/slide-view/view',
             dataType: "json",
 			headers: {
-				"Array-Registration-Id": "1",
-				"Array-Activity-Id": "1"
+				"Array-Registration-Id": this.user_id,
+				"Array-Activity-Id": this.activity_id
 			},
             async: false
         })
@@ -636,8 +636,8 @@ SlideViewController = function() {
             $.ajax({
                 url:'http://'+SlideViewController.socket_host+"/arraylearn/dashboard/rating",
 				headers: {
-					"Array-Registration-Id": "1",
-					"Array-Activity-Id": "1"
+					"Array-Registration-Id": SlideViewController.user_id,
+					"Array-Activity-Id": SlideViewController.activity_id
 				},
                 cache:0,
                 data:poststr,

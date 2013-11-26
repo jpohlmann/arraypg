@@ -40,6 +40,7 @@
 <script type="text/javascript" src="js/wPaint/inc/jquery.ui.widget.min.js"></script>
 <script type="text/javascript" src="js/wPaint/inc/jquery.ui.mouse.min.js"></script>
 <script type="text/javascript" src="js/wPaint/inc/jquery.ui.draggable.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
 <!-- wColorPicker -->
 <link rel="Stylesheet" type="text/css" href="js/wPaint/inc/wColorPicker.css" />
 <script type="text/javascript" src="js/wPaint/inc/wColorPicker.js"></script>
@@ -52,6 +53,9 @@
 <script type="text/javascript" src="js/jquery.cookie.js"></script>
 <script type="text/javascript" src="js/handlebars-v1.1.2.js"></script>
 <script type="text/javascript">
+if ($.cookie("registration_id") == null) {
+	window.location = 'login.html';
+}
 (function($) {
     $.QueryString = (function(a) {
         if (a == "") return {};
@@ -89,8 +93,8 @@ $.ajax({
     url: 'http://'+socket_host+'/arraylearn/slide-view/note?slide_id='+slide_id,
     type: "GET",
 	headers: {
-		"Array-Registration-Id": "1",
-		"Array-Activity-Id": "1"
+		"Array-Registration-Id": $.cookie("registration_id"),
+		"Array-Activity-Id": $.cookie("activity_id")
 	},
     dataType: "json",
     async: false,
@@ -107,8 +111,8 @@ $.ajax({
     dataType: "json",
     async: false,
 	headers: {
-		"Array-Registration-Id": "1",
-		"Array-Activity-Id": "1"
+		"Array-Registration-Id": $.cookie("registration_id"),
+		"Array-Activity-Id": $.cookie("activity_id")
 	},
 	complete:function(data){
 		 $("<style></style>").appendTo("head").html(data.responseText);
@@ -180,8 +184,8 @@ $(document).ready(function() {
 			type: 'POST',
 			data: $('#save_note').serialize(),
 			headers: {
-				"Array-Registration-Id": "1",
-				"Array-Activity-Id": "1"
+				"Array-Registration-Id": $.cookie("registration_id"),
+				"Array-Activity-Id": $.cookie("activity_id")
 			}
 		});
         setTimeout(function(){

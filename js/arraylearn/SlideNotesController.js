@@ -62,8 +62,8 @@ SlideNotesController = function() {
 			type: "POST",
 			crossDomain: true,
 			headers: {
-				"Array-Registration-Id": "1",
-				"Array-Activity-Id": "1"
+				"Array-Registration-Id": SlideViewController.user_id,
+				"Array-Activity-Id": SlideViewController.activity_id
 			},
 			data: $("#slide_note").serialize(),
 			url: 'http://'+SlideViewController.socket_host+'/arraylearn/dashboard/slidenote'
