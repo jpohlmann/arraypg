@@ -36,11 +36,10 @@
 		<script src="js/jquery_speed.js"></script>
 		<script src="js/jquery.cookie.js"></script>
     </head>
-    <body>
+    <body onload="testLogin()">
 <script src="js/arraylearn/SlideViewController.js"></script>
 <script type="text/javascript">
-document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady() {
+function testLogin() {
 	if ($.cookie("registration_id") == null) {
 		window.location.href = 'login.html';
 	}
