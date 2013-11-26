@@ -39,6 +39,12 @@
     <body>
 <script src="js/arraylearn/SlideViewController.js"></script>
 <script type="text/javascript">
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+	if ($.cookie("registration_id") == null) {
+		window.location.href = 'login.html';
+	}
+}
 var socket_port = 0;
 var socket_host = '';
 $.ajax({
@@ -76,9 +82,6 @@ SlideViewController.render();
 <script type="text/javascript" src="js/arraylearn/ChartingController.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-	if ($.cookie("registration_id") == null) {
-		window.location.href = 'login.html';
-	}
     SlideViewController.slidePull();
     SlideViewController.displayRating();
     SlideViewController.displaySidebar();
