@@ -74,7 +74,7 @@ var displayFormFields = function()
 	$('#formfields').html(compiled(loginSettings));
 }
 var getLoginText = function(loginSettings) {
-	if (loginSettings.settings.loginText != null){
+	if ((loginSettings.settings.loginText != null) && (loginSettings.settings.loginText != '')){
 		return loginSettings.settings.loginText;
 	}
 	if ((loginSettings.activity.emailRequired) && (!loginSettings.activity.disableAccessCode)) {
@@ -133,7 +133,7 @@ var validate = function() {
 <script id="formfield-template" type="text/x-handlebars-template">
 	<fieldset>
 		<!-- INCLUDE DYNAMIC TITLE HERE -->
-		<h1>{{this.activity.name}}</h1>
+		<h1>{{activity.name}}</h1>
 		<div id="feedback" style="display:none"></div>
 		<p class="info">{{login_text}}</p>
 		{{#unless activity.disableUserEmail}}
