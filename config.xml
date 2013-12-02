@@ -12,4 +12,7 @@
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
 	<icon src="iconlg.png"/>
+	<feature name="SplashScreen">
+		<param name="ios-package" value="CDVSplashScreen" />
+	</feature>
 </widget>
