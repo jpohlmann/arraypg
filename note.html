@@ -147,7 +147,7 @@ $(document).ready(function() {
 	var config = {};
 	config.email = email;
 	config.valid_email = false;
-	if ((email == null) || (email.indexOf('@') == -1)) {
+	if ((email != null) && (email.indexOf('@') != -1)) {
 		config.valid_email = true;
 	}
 	var template_source = $("#email-template").html();
