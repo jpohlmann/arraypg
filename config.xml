@@ -11,4 +11,6 @@
     <access origin="*" />
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
+	<gap:icon src="iconlg.png"/>
+	<gap:splash src="splash.png" />
 </widget>
