@@ -12,5 +12,5 @@
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
 	<icon src="iconlg.png"/>
-	<gap:splash gap:platform="ios" height="480" src="splash/ios/Default-ipad.png" width="320" />
+	<gap:splash gap:platform="ios" height="480" src="Resources/splash/Default~ipad.png" width="320" />
 </widget>
